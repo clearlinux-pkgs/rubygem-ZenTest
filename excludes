@@ -1,0 +1,7 @@
+# This file contains the output files that need %exclude. Full path
+# names, one per line.
+# 
+# This fail is duplicated in the package rubygem-minitest-autotest and remove
+# it does not affect the rubygem-pdf-reader package.
+#
+/usr/bin/autotest
