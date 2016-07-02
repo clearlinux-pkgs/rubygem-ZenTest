@@ -4,7 +4,7 @@
 #
 Name     : rubygem-ZenTest
 Version  : 4.11.1
-Release  : 13
+Release  : 14
 URL      : https://rubygems.org/downloads/ZenTest-4.11.1.gem
 Source0  : https://rubygems.org/downloads/ZenTest-4.11.1.gem
 Summary  : No detailed summary available
@@ -35,6 +35,7 @@ gem unpack %{SOURCE0}
 gem spec %{SOURCE0} -l --ruby > rubygem-ZenTest.gemspec
 
 %build
+export LANG=C
 gem build rubygem-ZenTest.gemspec
 
 %install
